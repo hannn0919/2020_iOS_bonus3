@@ -34,7 +34,7 @@ struct ContentView: View {
             
             HStack{
                 Button(action:{
-                    let randNum = 0 ..< self.roles.count
+                    let randNum = 0 ..< self.roles.count+1
                     self.pickindex = randNum.randomElement()!
                 }){
                     Text("🎲")
